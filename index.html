@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ammattimaiset siivouspalvelut Tampereella, tarjoamme koti- ja toimistosiivousta korkealaatuisesti.">
-    <meta name="keywords" content="Tampere, cleaning services, siivouspalvelut, kotisiivous, toimistosiivous, puhdistus">
-    <title>SKTeam - Siivouspalvelut Tampereella | Cleaning Services in Tampere</title>
+    <meta name="description" content="Ammattimaiset ja edulliset siivouspalvelut Tampereella. Tarjoamme koti- ja toimistosiivousta, sekä muita siivouspalveluita korkealaatuisesti ja luotettavasti.">
+    <meta name="keywords" content="Tampere, siivouspalvelut, cleaning services, edulliset siivouspalvelut, kotisiivous, toimistosiivous, puhdistus, affordable cleaning, best cleaning services">
+    <meta name="author" content="SK Team">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Finnish">
+    <link rel="canonical" href="https://www.skteam.fi">
+
+    <title>Parhaat ja Edulliset Siivouspalvelut Tampereella | SK Team</title>
+
     <style>
         * {
             margin: 0;
@@ -27,7 +33,7 @@
         }
 
         header img {
-            width: 120px; /* Adjust size for visibility, keeping aspect ratio */
+            width: 120px;
             height: auto;
             margin-bottom: 1rem;
         }
@@ -53,7 +59,7 @@
         }
 
         section {
-            padding: 1rem 1rem;
+            padding: 1rem;
             text-align: center;
         }
 
@@ -67,8 +73,13 @@
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2rem;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1rem;
+            margin-top: 0.5rem;
         }
 
         .services {
@@ -78,7 +89,9 @@
 
         .service-cards {
             display: flex;
-            justify-content: space-around;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
             margin-top: 2rem;
         }
 
@@ -87,7 +100,8 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 2rem;
-            width: 30%;
+            width: 90%;
+            max-width: 300px;
         }
 
         .about {
@@ -183,13 +197,25 @@
         }
 
         @media (max-width: 768px) {
+            header img {
+                width: 80px;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+            }
+
             .service-cards {
                 flex-direction: column;
+                gap: 2rem;
             }
 
             .card {
                 width: 90%;
-                margin-bottom: 2rem;
             }
         }
     </style>
@@ -197,69 +223,71 @@
 <body>
 
     <header>
-        <img src="logo.jpeg" alt="SK Team Logo"> <!-- Add logo image -->
-        <h1>SKTeam</h1>
-        <h3>Ammattitaitoiset siivouspalvelut Tampereen seudulla</h3>
+        <img src="logo.jpeg" alt="SK Team Logo - Parhaat Siivouspalvelut Tampereella"> <!-- Updated alt text -->
+        <h1>SK Team</h1>
+        <h3>Ammattitaitoiset ja Edulliset Siivouspalvelut Tampereella</h3>
         <nav>
             <a href="#hero">Etusivu</a>
             <a href="#services">Palvelut</a>
             <a href="#about">Meistä</a>
             <a href="#contact">Yhteystiedot</a>
+            <a href="#language" id="language-toggle">English</a>
         </nav>
     </header>
 
     <section id="hero" class="hero">
-        <h1>Teemme Tilasi Puhtaaksi</h1>
+        <h1 id="hero-heading">Edulliset Siivousratkaisut Tampereella</h1>
+        <p id="hero-description">Tarjoamme parhaita siivouspalveluita kodillesi ja toimistollesi. Luota meihin puhtauden ammattilaisina!</p>
     </section>
 
     <section id="services" class="services">
         <h2>Palvelumme</h2>
+        <p id="services-intro">Tutustu kattaviin siivouspalveluihimme Tampereen alueella.</p>
         <div class="service-cards">
             <div class="card">
                 <h3>Kotisiivous</h3>
-                <p>Suunnittelu Kodin Siivouspalveluita Toiveiden mukaan.</p>
+                <p>Hoidamme kodin siivouksen toiveidesi mukaisesti, huolellisesti ja edullisesti.</p>
             </div>
             <div class="card">
                 <h3>Toimistosiivous</h3>
-                <p>Tulee Toimitilasiivous Pitää Työtilasi Puhtaana.</p>
+                <p>Pidämme toimitilasi puhtaana ja viihtyisänä, jotta voit keskittyä töihisi.</p>
             </div>
             <div class="card">
                 <h3>Muut Palvelut</h3>
-                <p>Lisäksi Meiltä onnistuu. Nurmikon leikkuu, Pihan Haravointi, Lumityöt, Muuttoapu, Kanto apu, Kaupassa Asiointi.</p>
+                <p>Tarjoamme myös nurmikonleikkuuta, pihan haravointia, lumitöitä, muuttoapua ja paljon muuta.</p>
             </div>
         </div>
     </section>
 
     <section id="about" class="about">
         <h2>Meistä</h2>
-        <p>SK Team Tarjoaa ammattitaitoinen Siivous Palvelua Yksityissille etta Yritysasikkaille.</p>
+        <p id="about-info">SK Team on Tampereen johtava siivousalan yritys. Tarjoamme yksityisasiakkaille ja yrityksille luotettavaa ja laadukasta siivouspalvelua.</p>
     </section>
 
     <section id="contact" class="contact">
         <h2>Ota Yhteyttä</h2>
+        <p id="contact-intro">Haluatko tietää lisää palveluistamme? Lähetä meille viesti tai soita!</p>
         <form id="contact-form" action="https://formspree.io/f/mnnaedre" method="POST">
             <input type="text" name="name" placeholder="Nimesi" required>
-            <input type="email" name="email" placeholder="Sähköpostiosoitteesi" required>			
-			<input type="phone" name="phone" placeholder="puhelin">
+            <input type="email" name="email" placeholder="Sähköpostiosoitteesi" required>
+            <input type="phone" name="phone" placeholder="Puhelinnumerosi">
             <textarea name="message" placeholder="Viesti" rows="5" required></textarea>
             <input type="submit" value="Lähetä Viesti">
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 SKTeam | Kaikki Oikeudet Pidätetään</p>
+        <p>&copy; 2024 SK Team | Kaikki Oikeudet Pidätetään</p>
         <p><a href="mailto:skteam.fi@gmail.com" style="color: white;">skteam.fi@gmail.com</a> | <a href="mailto:info@skteam.fi" style="color: white;">info@skteam.fi</a></p>
-		<p>050 363 4311</p>
+        <p>050 363 4311</p>
     </footer>
 
-    <!-- Thank You Popup -->
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="thank-you-popup">
         <h2>Kiitos yhteydenotostasi!</h2>
         <p>Olemme vastaanottaneet viestisi ja otamme sinuun yhteyttä kahden arkipäivän kuluessa.</p>
         <button onclick="closePopup()">Sulje</button>
     </div>
-
     <script>
         function closePopup() {
             document.getElementById('thank-you-popup').style.display = 'none';
